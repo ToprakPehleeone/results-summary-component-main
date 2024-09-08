@@ -1,47 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="result">
+        <p class="trns">Your Result</p>
+        <div class="score"><span id="result_span">76</span>of 100</div>
+        <div>
+          <p class="big ">Great</p>
+          <p class="result_p trns">
+            You scored higher than 65% of the people who have taken these
+            tests.
+          </p>
+        </div>
+      </section>
+      <section class="summary">
+        <p class="header_sum">Summary</p>
+        <div class="container red">
+          <img src="./assets/images/icon-reaction.svg" alt="" class="img" />
+          <p class="cont_p red_2">Reaction</p>
+          <p class="numbers">80 <span class="span">/ 100</span></p>
+        </div>
+        <div class="container orange">
+          <img src="./assets/images/icon-memory.svg" alt="" class="img" />
+          <p class="cont_p orange_2">Memory</p>
+          <p class="numbers">92 <span class="span">/ 100</span></p>
+        </div>
+        <div class="container green">
+          <img src="./assets/images/icon-verbal.svg" alt="" class="img" />
+          <p class="cont_p green_2">Verbal</p>
+          <p class="numbers">61 <span class="span">/ 100</span></p>
+        </div>
+        <div class="container blue">
+          <img src="./assets/images/icon-visual.svg" alt="" class="img" />
+          <p class="cont_p blue_2">Visual</p>
+          <p class="numbers">72 <span class="span">/ 100</span></p>
+        </div>
+        <button id="continue">Continue</button>
+      </section>
+    </main>
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/ToprakPehleeone">Toprak Pehlivan</a>.
+    </div>
+  </body>
 </html>
